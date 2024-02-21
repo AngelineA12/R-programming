@@ -1,0 +1,7 @@
+x <- seq(0,1,by = 0.05)
+y <- qnorm(x,mean=1,sd=1)
+plot(x,y)
+cor(mtcars$hp,mtcars$mpg,method="pearson")
+library(corrplot)
+M <- cor(mtcars)
+corrplot(M,method="number")
